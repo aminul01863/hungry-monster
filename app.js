@@ -17,7 +17,7 @@ searchBtn.addEventListener("click", function () {
                 const foodDiv = document.createElement("div");
                 foodDiv.className = "foods mt-5";
                 const foodInfo = `
-                    <div class="card" style="width: 18rem;" onclick="foodDetail('${foods.strMeal}')">
+                    <div class="card" style="width: 16.5rem;" onclick="foodDetail('${foods.strMeal}')">
                     <img src="${foods.strMealThumb}" class="card-img-top img-thumbnail" alt="...">
                     <div class="card-body text-center">
                         <h5 class="card-title">${foods.strMeal}</h5>
@@ -46,10 +46,10 @@ const foodDetail = (foodName) => {
 const foodInformation = food => {
     const mealDetail = document.getElementById("foodDetail");
     mealDetail.innerHTML = `
-        <img width="400" height="200" class="img-fluid" src="${food.strMealThumb}">
+        <img width="350" height="250" class="img-detail" src="${food.strMealThumb}">
         <h1>${food.strMeal}</h1>
         <h3>Ingredients</h3>
-        <ul class="list-group">
+        <ul class="list-item">
             <li class="list-group-item list-group-item-dark">
                 <input class="form-check-input me-1" type="checkbox" Checked>
                 ${food.strIngredient1}
@@ -62,7 +62,7 @@ const foodInformation = food => {
                 <input class="form-check-input me-1" type="checkbox"  Checked>
                 ${food.strIngredient3}
             </li>
-            <li class="list-group-item list-group-item-dark justify-content-first">
+            <li class="list-group-item list-group-item-dark">
                 <input class="form-check-input me-1" type="checkbox"  Checked>
                 ${food.strIngredient4}
             </li>
