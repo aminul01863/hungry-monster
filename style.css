@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+
+
+#menuList {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+#menuList:hover{
+ color: rgb(3, 100, 40);
+}
+
+#foodDetailInfo img {
+    border-radius: 10px;
+}
